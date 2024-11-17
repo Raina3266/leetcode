@@ -1,20 +1,36 @@
+// max - min <= limit
+
+
 pub fn longest_subarray(nums: Vec<i32>, limit: i32) -> i32 {
+    use std::{cmp::max, collections::VecDeque};
+
+    let mut ans = 1;
+    let mut increasing: VecDeque<i32> = VecDeque::new();
+    increasing.push_back(nums[0]);
+    let mut decreasing: VecDeque<i32> = VecDeque::new();
+    decreasing.push_back(nums[0]);
     let mut left = 0;
-    let mut right = 0;
-    let mut ans = 0;
-    let mut maximum: Vec<i32> = vec![];
-    let mut minimum: Vec<i32> = vec![];
-    while left < nums.len() && right < nums.len(){
-        if maximum.is_empty() {
-            maximum.push(nums[right])
+
+    for i in 1..nums.len() {
+        while !increasing.is_empty() && &nums[i] <= increasing.back().unwrap(){
+            increasing.pop_back().unwrap();
         }
-        if minimum.is_empty() {
-            minimum.push(nums[right])
+        increasing.push_back(nums[i]);
+        while !decreasing.is_empty() && &nums[i] >= decreasing.back().unwrap(){
+            decreasing.pop_back().unwrap();
         }
-        right += 1;
-        if nums[right] > *maximum.last().unwrap() {
-            
+        decreasing.push_back(nums[i]);
+        
+        while !decreasing.is_empty() && !increasing.is_empty() && decreasing[0] - increasing[0] > limit {
+            if &nums[left] == increasing.front().unwrap(){
+                increasing.pop_front().unwrap();
+            }
+            if &nums[left] == decreasing.front().unwrap(){
+                decreasing.pop_front().unwrap();
+            }
+            left += 1; 
         }
+        ans = max(ans, i - left + 1);
     }
-    ans
+    ans as i32
 }
