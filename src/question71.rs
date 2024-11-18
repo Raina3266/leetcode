@@ -10,7 +10,7 @@ pub fn simplify_path(path: String) -> String {
     }
     if ans.is_empty() {
         return "/".to_string();
-    } else {m
+    } else {
         ans.iter().map(|s| format!("/{s}")).collect()
     }
 }

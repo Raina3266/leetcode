@@ -21,3 +21,8 @@ pub fn biggest_average(nums: Vec<i32>, k: i32) -> f64 {
     }
     result
 } 
+
+pub fn biggest_average_better(nums: &[i32], k: usize) -> f64 {
+    let biggest_sum = nums.windows(k).map(|subslice| subslice.into_iter().sum::<i32>()).max().unwrap();
+    return biggest_sum as f64 / k as f64
+    } 

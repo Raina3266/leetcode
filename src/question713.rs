@@ -19,9 +19,3 @@ pub fn num_subarray_product_less_than_k(nums: Vec<i32>, k: i32) -> i32 {
     number_of_subarray as i32
 }
 
-#[test]
-fn tessst() {
-    let nums = [10, 5, 2, 6];
-    let k = 100;
-    println!("{k}");
-}

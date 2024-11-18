@@ -1,4 +1,3 @@
-use proptest::collection::vec;
 
 pub fn get_averages(nums: Vec<i32>, k: usize) -> Vec<i32> {
     let i64_nums: Vec<i64> = nums.into_iter().map(|x| x as i64).collect();

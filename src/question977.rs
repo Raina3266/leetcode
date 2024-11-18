@@ -1,4 +1,3 @@
-use proptest::prop_assume;
 use test_strategy::proptest;
 
 pub fn sorted_squares(nums: Vec<i32>) -> Vec<i32> {

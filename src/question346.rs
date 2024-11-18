@@ -21,7 +21,7 @@ impl MovingAverage {
             let ans: f64 = self.stream.iter().sum::<i32>() as f64 / length as f64;
             return ans;
         } else {
-            for i in 0..=(length - self.size){
+            for _ in 0..=(length - self.size){
                 self.stream.pop_front();
             }
             let ans: f64 = self.stream.iter().sum::<i32>() as f64 / self.size as f64;

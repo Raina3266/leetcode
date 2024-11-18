@@ -2,14 +2,14 @@ use std::rc::Rc;
 
 mod linked_list;
 
-mod biggest_average;
+mod question643;
 mod question1426;
 mod question509;
 pub mod question392;
 mod k_distinct_char;
-mod length_of_longest_substring;
-mod max_consecutive_ones;
-mod missing_number;
+mod question3;
+mod question1004;
+mod question268;
 mod questin49;
 mod question1;
 mod question104;
@@ -55,11 +55,12 @@ mod question9;
 mod question901;
 mod question933;
 mod question344;
-mod squares_of_sorted_array;
-mod step_sum;
-mod subarray_averages;
-mod subarray_product;
-mod sum_of_1d_array;
+mod question977;
+mod question1413;
+mod question1832;
+mod question2090;
+mod question713;
+mod question1480;
 mod two_lists;
 fn main() {
     // let nums = [0,0,1,1,1,2,2,3,3,4]

@@ -1,4 +1,4 @@
-use std::collections::{HashMap};
+use std::collections::HashMap;
 
 
 pub fn k_distinct_char(k: usize, s: String) -> String {
@@ -31,9 +31,6 @@ pub fn k_distinct_char(k: usize, s: String) -> String {
             *chars_in_window.entry(next_char).or_insert(0usize) += 1;
         }
 
-
-
-
         // update max
         let current = end - start;
         ans = std::cmp::max(ans, current);
@@ -51,6 +48,4 @@ pub fn k_distinct_char(k: usize, s: String) -> String {
 
 
     // }
-
-    todo!()
 }
