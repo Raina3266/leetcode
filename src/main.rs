@@ -1,11 +1,11 @@
 use std::rc::Rc;
 
 mod linked_list;
-
+mod question100;
 mod question643;
 mod question1426;
 mod question509;
-pub mod question392;
+mod question392;
 mod k_distinct_char;
 mod question3;
 mod question1004;
@@ -19,10 +19,12 @@ mod question1189;
 mod question1248;
 mod question125;
 mod question14;
+mod question111;
 mod question1438;
 mod question1544;
 mod question1941;
 mod question20;
+mod question543;
 mod question206;
 mod question2225;
 mod question2248;
@@ -33,6 +35,7 @@ mod question2342;
 mod question2351;
 mod question2352;
 mod question239;
+mod question1448;
 mod question24;
 mod question26;
 mod question27;
@@ -61,6 +64,7 @@ mod question1832;
 mod question2090;
 mod question713;
 mod question1480;
+mod question112;
 mod two_lists;
 fn main() {
     // let nums = [0,0,1,1,1,2,2,3,3,4]
