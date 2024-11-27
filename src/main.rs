@@ -65,6 +65,7 @@ mod question2090;
 mod question713;
 mod question1480;
 mod question112;
+mod question236;
 mod two_lists;
 fn main() {
     // let nums = [0,0,1,1,1,2,2,3,3,4]
@@ -85,6 +86,7 @@ impl ListNode {
     }
 }
 
+#[derive(Debug, PartialEq, Eq)]
 pub struct Tree<T> {
     value: T,
     left: Option<Box<Tree<T>>>,

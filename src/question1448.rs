@@ -1,4 +1,4 @@
-use std::{cell::RefCell, cmp::max, intrinsics::breakpoint, rc::Rc};
+use std::{cell::RefCell, rc::Rc};
 
 #[derive(Debug, PartialEq, Eq)]
 pub struct TreeNode {
@@ -18,14 +18,12 @@ impl TreeNode {
     }
 }
 
-use crate::Tree;
-
 pub fn good_nodes(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
     let Some(node) = root.clone() else {
         unreachable!();
     };
     let node = node.borrow();
-    let max_ancestor = i32::MIN;
+    let max_ancestor = node.val;
     good_nodes_inner(root, max_ancestor)
 }
 
