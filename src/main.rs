@@ -67,9 +67,17 @@ mod question1480;
 mod question112;
 mod question236;
 mod question1026;
+// Heap
 mod question1046;
 mod question2208;
 mod question480;
+mod question1962;
+mod question1167;
+mod question347;
+mod question658;
+mod question215;
+mod question703;
+mod question973;
 mod two_lists;
 fn main() {
     // let nums = [0,0,1,1,1,2,2,3,3,4]
