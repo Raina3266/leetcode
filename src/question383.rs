@@ -1,5 +1,4 @@
 
-
 pub fn can_construct(ransom_note: String, magazine: String) -> bool {
     use std::collections::HashMap;
     let mut map_mag: HashMap<char, i32> = HashMap::new();

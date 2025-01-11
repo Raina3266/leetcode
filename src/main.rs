@@ -78,6 +78,21 @@ mod question658;
 mod question215;
 mod question703;
 mod question973;
+// Greedy
+mod question2126;
+mod question2294;
+mod question1323;
+mod question1710;
+mod question1196;
+mod question1338;
+mod question1481;
+mod question881;
+// binary search
+mod question704;
+mod question2389;
+mod question74;
+mod question2300;
+mod question875;
 mod two_lists;
 fn main() {
     // let nums = [0,0,1,1,1,2,2,3,3,4]
