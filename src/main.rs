@@ -93,6 +93,10 @@ mod question2389;
 mod question74;
 mod question2300;
 mod question875;
+mod question1283;
+mod question1631;
+// backtracking
+mod question46;
 mod two_lists;
 fn main() {
     // let nums = [0,0,1,1,1,2,2,3,3,4]
