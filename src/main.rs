@@ -97,6 +97,11 @@ mod question1283;
 mod question1631;
 // backtracking
 mod question46;
+mod question77;
+mod question78;
+mod question17;
+// dynamic programming
+mod question62;
 mod two_lists;
 fn main() {
     // let nums = [0,0,1,1,1,2,2,3,3,4]
