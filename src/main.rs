@@ -105,6 +105,7 @@ mod question64;
 mod question198;
 // dynamic programming
 mod question62;
+mod question746;
 mod two_lists;
 fn main() {
     // let nums = [0,0,1,1,1,2,2,3,3,4]
