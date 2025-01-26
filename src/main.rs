@@ -109,6 +109,12 @@ mod question746;
 mod question300;
 mod question70;
 mod question322;
+// graph
+mod question547;
+mod question200;
+mod question1971;
+mod question323;
+mod question695;
 mod two_lists;
 fn main() {
     // let nums = [0,0,1,1,1,2,2,3,3,4]
