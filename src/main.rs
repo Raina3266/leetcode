@@ -115,6 +115,20 @@ mod question200;
 mod question1971;
 mod question323;
 mod question695;
+mod question1466;
+mod question2368;
+mod question797;
+mod question1091;
+
+// for interview
+mod question15;
+mod question53;
+mod question121;
+mod question217;
+mod question238;
+mod question242;
+mod palindrome;
+
 mod two_lists;
 fn main() {
     // let nums = [0,0,1,1,1,2,2,3,3,4]
