@@ -1,17 +1,24 @@
-use std::rc::Rc;
 
-mod linked_list;
+// Arrays and strings
+mod question1;
+mod question15;
+mod question392;
+mod question344;
+mod question977;
+mod question713;
+
+
 mod question100;
 mod question643;
 mod question1426;
 mod question509;
-mod question392;
+
 mod k_distinct_char;
 mod question3;
 mod question1004;
 mod question268;
 mod questin49;
-mod question1;
+
 mod question104;
 mod question1047;
 mod question1133;
@@ -57,12 +64,12 @@ mod question876;
 mod question9;
 mod question901;
 mod question933;
-mod question344;
-mod question977;
+
+
 mod question1413;
 mod question1832;
 mod question2090;
-mod question713;
+
 mod question1480;
 mod question112;
 mod question236;
@@ -121,13 +128,15 @@ mod question797;
 mod question1091;
 
 // for interview
-mod question15;
+
 mod question53;
 mod question121;
 mod question217;
 mod question238;
 mod question242;
 mod palindrome;
+mod tree_practice;
+mod recursion_practice;
 
 mod two_lists;
 fn main() {

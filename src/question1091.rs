@@ -20,6 +20,6 @@ pub fn shortest_path_binary_matrix(grid: Vec<Vec<i32>>) -> i32 {
 
     let mut visited = HashSet::new();
     visited.insert((0, 0));
+    todo!()
 }
 
-fn dfs(grid: &mut Vec<Vec<i32>>, x: isize, y: isize, path_len: i32, shortest: &mut i32) {}
