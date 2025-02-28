@@ -1,7 +1,6 @@
 
 // Arrays and strings
 mod question1;
-mod question15;
 mod question392;
 mod question344;
 mod question977;
@@ -139,6 +138,16 @@ mod tree_practice;
 mod recursion_practice;
 
 mod two_lists;
+
+// Cloudflare interview
+mod question15;
+mod question18;
+mod question622;
+mod question289;
+mod question1381;
+mod question227;
+
+
 fn main() {
     // let nums = [0,0,1,1,1,2,2,3,3,4]
     // let result = question26::remove_duplicates();
